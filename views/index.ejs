@@ -1,0 +1,85 @@
+<%include ./partials/header.ejs %>
+
+<div class="header">
+  <div class="nav-menu">
+    <div class="logo">Car Seller</div>
+    <div class="menu">
+      <ul>
+        <li><a href="/" class="active">Homepage</a></li>
+        <li><a href="#">Our clients</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Categories</a></li>
+        <% if(user){ %>
+
+        <li><a href="/logout">logout</a></li>
+        <% }else{%>
+        <li><a href="/logout">logout</a></li>
+        <% }%>
+        <li><a href="/contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <h1>Unlock Your Next Adventure.</h1>
+    <p>
+      Explore a world of possibilities with our curated selection of vehicles,
+      unlocking new adventures at every turn. Find your perfect companion to
+      unlock the next chapter of your thrilling journey.
+    </p>
+    <a href="index.html">More</a>
+  </div>
+</div>
+<div class="container">
+  <div class="text">
+    <h1>Features</h1>
+    <p>
+      Discover cutting-edge features tailored to elevate your driving experience
+      and exceed your expectations.
+    </p>
+  </div>
+  <div class="main">
+    <div class="single">
+      <i class="fas fa-cloud-download-alt"></i>
+      <p>
+        Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad
+        torquent per conubia nostra.
+      </p>
+      <a href="index.html">More info</a>
+    </div>
+    <div class="single">
+      <i class="fas fa-cogs"></i>
+      <p>
+        Etiam neque. Vivamus consequat lorem at nisl. Nullam wisi a sem semper
+        eleifend. Donec mattis.
+      </p>
+      <a href="index.html">More info</a>
+    </div>
+    <div class="single">
+      <i class="fas fa-wrench"></i>
+      <p>
+        Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi.
+        Pellentesque adipiscing purus.
+      </p>
+      <a href="index.html">More info</a>
+    </div>
+  </div>
+  <footer>
+    <h1>Disclaimer</h1>
+    <p>
+      Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue
+    </p>
+
+    <p class="txt">
+      Please note that the information provided on this website is for
+      informational purposes only and does not constitute an offer or contract.
+      While we strive for accuracy, errors may occur, and specifications are
+      subject to change without notice. We advise confirming details directly
+      with our dealership for the most updated and accurate information.
+    </p>
+
+    <a href="#">Etiam prousere</a>
+
+    <span> &copy; Website design by <b>Ansh Goyal</b> | 10.01.2024</span>
+  </footer>
+</div>
+<%include ./partials/footer.ejs %>

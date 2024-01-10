@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contbtn">
+        <a href="/contact">Contact US</a>
+      </div>
+      <div class="left-section"></div>
+      <div class="right-section">
+        <div class="login-container">
+          <form class="login-form" action="/register" method="post">
+            <h2 class="login-title">
+              <i class="fas fa-user-circle"></i> Login
+            </h2>
+            <div class="form-control">
+              <i class="fas fa-user icon"></i>
+              <input
+                type="text"
+                placeholder="Username"
+                name="username"
+                id="username"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <i class="fas fa-user icon"></i>
+              <input
+                type="text"
+                placeholder="Full Name"
+                name="fullname"
+                id="fullname"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <i class="fas fa-lock icon"></i>
+              <input type="email" name="email" placeholder="Email" id="email" />
+            </div>
+
+            <div class="form-control">
+              <i class="fas fa-lock icon"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                id="password"
+              />
+            </div>
+
+            <div class="social-login">
+              <i class="fab fa-google social-icon"></i>
+              <i class="fab fa-facebook-f social-icon"></i>
+              <i class="fab fa-twitter social-icon"></i>
+            </div>
+            <button type="submit">Register Me</button>
+            <a class="lr" href="/login">Already on CarSeller? Log In</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
